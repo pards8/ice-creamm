@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+.bg-pink {
+    background-color: #f79acb !important;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.div{
+    padding-left: 1000px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.business-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Gabriola;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: bold;
+    color: black !important;
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: white !important;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    width: 25px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.Gallery {
+    width: 100%;
+    padding:  50px 15px;
+    background-image: url('assets/background.png'); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+.Gallery h1 {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Gallery h1 span {
+    color: #ffffff;
+    margin-left: 15px;
+    font-family: Gabriola;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+
+.Gallery-box {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px;
+    padding: 15px;
+    justify-content: center;
+}
+
+.Gallery-cart {
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, rgba(255, 182, 193, 0.9), rgba(255, 228, 225, 0.9));
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.Gallery-cart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Gallery-image img {
+    width: 100%;
+    height: 180px; /* Adjust height to make images less tall */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.Gallery-info h2 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 22px;
+    color: #2c3e50; /* A darker, elegant color for product names */
+    font-weight: bold; /* Emphasizes the product name */
+    font-family: 'Arial', sans-serif; /* Clean and professional font */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Adds a subtle text shadow */
+}
+
+.Gallery-info p {
+    text-align: center;
+    margin-top: 8px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #7f8c8d; /* A softer color for descriptions */
+    font-family: 'Verdana', sans-serif;
+}
+
+.Gallery-info h3 {
+    text-align: center;
+    margin-top: 10px;
+    color: #27ae60; /* Green color for price to signify positivity (e.g., deals or value) */
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Georgia', serif; /* A slightly decorative font for prices */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Gallery-icon {
+    color: gold;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Gallery-btn {
+    display: flex;
+    justify-content: center; 
+    margin-top: 15px;
+}
+
+.Gallery-btn button {
+    font-size: 18px;
+    background-color: #b3107c;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.Gallery-box {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensures 3 pictures per row */
+    gap: 15px; /* Spacing between the items */
+    padding: 15px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .Gallery-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Gallery-cart {
+        max-width: 200px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .Gallery-box {
+        grid-template-columns: 1fr; 
+    }
+
+    .Gallery-cart {
+        max-width: 100%; 
+    }
+
+    .Gallery-image img {
+        height: 150px;
+    }
+}
+
+.modal-header {
+    background-color: #b3107c;
+    color: #fff;
+}
+
+
+#userIconSection img {
+    border: 3px solid #b3107c; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#userDetails {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#userName {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#userEmail {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+#logoutButton {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
