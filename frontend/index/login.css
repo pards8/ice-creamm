@@ -1,0 +1,102 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #D6C8F5; 
+}
+
+.login-section {
+    height: 100vh;
+    background-image: url('/FIGMA/login page background.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.login-container {
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    background-color: #f99bbf;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form-control {
+    background-color: #EAEAEA;
+    border-radius: 20px;
+    border: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #f99bbf;
+}
+
+.btn-outline-primary {
+    border-radius: 15px;
+    border-color: #B699F9;
+    color: #B699F9;
+}
+
+.btn-outline-primary:hover {
+    background-color: #B699F9;
+    color: white;
+}
+
+.btn-primary, .btn-secondary {
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: #B699F9;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #F99BBF;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #A282EE;
+}
+
+.btn-secondary:hover {
+    background-color: #e57bad;
+}
+
+.text-center a {
+    color: #B699F9;
+}
+
+/* Styling for the Register button */
+.btn-link {
+    color: #EAEAEA;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0;
+    background-color: #B699F9;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.btn-link:focus,
+.btn-link:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-link:hover {
+    background-color: #B699F9;
+    color: white;
+    opacity: 0.8;
+}
