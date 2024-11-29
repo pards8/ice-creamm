@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Management</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar">
+                <div class="logo">
+                    <img src="logo.png" alt="Logo" class="img-fluid mb-4">
+                    <h5>business name</h5>
+                </div>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sales report</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inventory Status</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="#">Price management</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log out</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-md-10">
+                <div class="header-section">
+                    <h2>Price Management</h2>
+                </div>
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>price</th>
+                                <th>edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>cone</td>
+                                <td>$1.5</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="editPrice('cone')">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>cup</td>
+                                <td>$2.5</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="editPrice('cup')">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>float</td>
+                                <td>$3.5</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="editPrice('float')">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
