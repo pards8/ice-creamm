@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap');
+
+:root {
+        --main-font: 'Bree Serif', serif;
+        --header-font: 'Lobster', cursive;
+        --bg-purple-light: #c284d5;
+        --bg-purple-dark: #4e0066;
+        --bg-white: #fff;
+        
+}
+
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-purple-light);
+}
+#dashboard-title {
+    text-align: center;  
+    font-size: 24px;     
+    margin: 0 auto;   
+    
+}
+.pt-5{
+    padding-bottom: 1000px;
+}
+.header{
+    background-color: var(--bg-purple-dark);
+}
+
+  .sidebar {
+    background-color: var(--bg-purple-dark);
+    padding: 20px;
+    height: fluid;
+    text-align: center;
+    color: var(--bg-white);
+}
+
+.sidebar .logo {
+    max-width: 100px; 
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    color: var(--bg-white);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: var(--bg-purple-light);
+}
+
+.dashboard-content {
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.card {
+    margin: 10px 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.sales-table {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+
+
+
+
+
+

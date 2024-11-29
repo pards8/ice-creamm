@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Management</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" type="image" href="FIGMA/logo1.png">
+    <link rel="stylesheet" href="price.css">
+
+    
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <h3>
+                    <img src="./ass/logo1.png"  alt="logo" style="width: 40px; height: 40px; margin-right: 10px;">
+                    Mr. Frooze
+                </h3>
+                
+                <div class="pt-5">
+                    <a href="#">Dashboard</a>
+                <a href="#">Sales Report</a>
+                <a href="#">Inventory Status</a>
+                <a href="#">Price Management</a>
+                <a href="#" style="margin-top: 300px;">Log Out</a>
+                </div>
+            </div>
+            
+           
+            <div class="col-md-10 dashboard-content">
+                <div class="header">
+                    <h1 id="dashboard-title"><b>Price Management</b></h1>
+
+
+                    <div>
+                        <a ><i class="fa-solid fa-user" style="color: #030303;"></i>user</a>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Edit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cone</td>
+                                <td>$1.5</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="editPrice('cone')">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Cup</td>
+                                <td>$2.5</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="editPrice('cup')">Edit</button></td>
+                            </tr>
+                            <tr>
+                                <td>Float</td>
+                                <td>$3.5</td>
+                                <td><button class="btn btn-primary btn-sm" onclick="editPrice('float')">Edit</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
