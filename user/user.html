@@ -11,29 +11,24 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-pink">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="assets/logo.png" alt="Logo" class="logo-image">
-                <span class="business-name">MR. FROOZE</span>
+                <span class="business-name ms-2 d-none d-lg-block">MR. FROOZE</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <div class="div">
-                <div class="nav-icons d-flex gap-2">
-                    <button class="btn" id="cartButton" role="button" data-bs-toggle="modal" data-bs-target="#cartModal">
-                        <img src="assets/cart_icon.jpeg.svg" alt="Cart">
-                        <span id="cartCount" class="cart-count">0</span>
-                    </button>
-                    <button class="btn icon-btn" id="userButton" role="button" data-bs-toggle="modal" data-bs-target="#userModal">
-                        <img src="assets/usericon.svg" alt="User" class="icon-img">
-                    </button>
-                </div >
-               </div> 
+            <div class="nav-icons d-flex align-items-center gap-3">
+                <button class="icon-btn position-relative" id="cartButton" role="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                    <img src="assets/cart_icon.jpeg.svg" alt="Cart" class="icon">
+                    <span id="cartCount" class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                </button>
+                <button class="icon-btn" id="userButton" role="button" data-bs-toggle="modal" data-bs-target="#userModal">
+                    <img src="assets/usericon.svg" alt="User" class="icon">
+                </button>
             </div>
         </div>
     </nav>
+    
+    
 
     <div class="Gallery" id="GALLERY">
         <h1>PICK<span> What you like</span></h1>
@@ -101,7 +96,7 @@
                     <h2>Chocolate</h2>
                     <h3>30.00</h3>
                     <div class="Gallery-btn">
-                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Chocolate" data-price="137" data-bs-toggle="modal" data-bs-target="#chocolateModal">+</button>
+                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Chocolate" data-price="30" data-bs-toggle="modal" data-bs-target="#chocolateModal">+</button>
                     </div>                    
                 </div> 
             </div>
@@ -136,7 +131,7 @@
                             <button type="button" 
                                     class="btn btn-primary add-to-cart-confirm" 
                                     data-product-name="Chocolate" 
-                                    data-price="38.00" 
+                                    data-price="30.00" 
                                     data-serve-id="serveTypeChocolate"
                                     data-size-id="sizeTypeChocolate">
                                 Add to Cart
@@ -155,7 +150,7 @@
                     <h2>Mango</h2>  
                     <h3>38.00</h3>
                     <div class="Gallery-btn">
-                         <button class="btn btn-primary add-to-cart-btn" data-product-name="Mango" data-price="137" data-bs-toggle="modal" data-bs-target="#mangoModal">+</button>
+                         <button class="btn btn-primary add-to-cart-btn" data-product-name="Mango" data-price="38.00" data-bs-toggle="modal" data-bs-target="#mangoModal">+</button>
                     </div>                    
                 </div> 
             </div>
@@ -188,7 +183,7 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-primary add-to-cart-confirm" 
                                     data-product-name="Mango" 
-                                    data-price="137" 
+                                    data-price="38.00" 
                                     data-serve-id="serveTypeMango" 
                                     data-size-id="sizeTypeMango">
                                 Add to Cart
@@ -207,7 +202,7 @@
                     <h2>Vanilla</h2>
                     <h3>$48.00</h3>
                     <div class="Gallery-btn">
-                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Vanilla" data-price="137" data-bs-toggle="modal" data-bs-target="#vanillaModal">+</button>
+                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Vanilla" data-price="48.00" data-bs-toggle="modal" data-bs-target="#vanillaModal">+</button>
                     </div>                    
                 </div> 
             </div>
@@ -240,7 +235,7 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-primary add-to-cart-confirm" 
                                     data-product-name="Vanilla" 
-                                    data-price="137" 
+                                    data-price="48.00" 
                                     data-serve-id="serveTypeVanilla" 
                                     data-size-id="sizeTypeVanilla">
                                 Add to Cart
@@ -259,7 +254,7 @@
                     <h2>Mint Chocolate</h2>
                     <h3>35.00</h3>
                     <div class="Gallery-btn">
-                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Mint" data-price="137" data-bs-toggle="modal" data-bs-target="#mintModal">+</button>
+                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Mint" data-price="35.00" data-bs-toggle="modal" data-bs-target="#mintModal">+</button>
                     </div>                    
                 </div> 
             </div>
@@ -292,7 +287,7 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-primary add-to-cart-confirm" 
                                     data-product-name="Mint" 
-                                    data-price="137" 
+                                    data-price="35.00" 
                                     data-serve-id="serveTypeMint" 
                                     data-size-id="sizeTypeMint">
                                 Add to Cart
@@ -311,7 +306,7 @@
                     <h2>Magnum</h2>
                     <h3>$51.00</h3>
                     <div class="Gallery-btn">
-                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Magnum" data-price="137" data-bs-toggle="modal" data-bs-target="#magnumModal">+</button>
+                        <button class="btn btn-primary add-to-cart-btn" data-product-name="Magnum" data-price="51.00" data-bs-toggle="modal" data-bs-target="#magnumModal">+</button>
                     </div>                    
                 </div> 
             </div>
@@ -344,7 +339,7 @@
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                             <button type="button" class="btn btn-primary add-to-cart-confirm" 
                                     data-product-name="Magnum" 
-                                    data-price="137" 
+                                    data-price="51.00" 
                                     data-serve-id="serveTypeMagnum" 
                                     data-size-id="sizeTypeMagnum">
                                 Add to Cart

@@ -17,22 +17,20 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     background-color: #ff85a2;
-    z-index: 1000; 
+    z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 5px 15px; 
-    height: 50px; 
+    padding: 0.5rem 1rem;
+    height: 55px;
     display: flex;
-    align-items: center; 
+    align-items: center;
+    justify-content: space-between;
 }
 
 .bg-pink {
     background-color: #f79acb !important;
-    background-image: url('');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .div{
@@ -40,14 +38,8 @@ body {
 }
 
 .logo-image {
-    width: 35px; 
+    width: 40px;
     height: auto;
-    margin-right: 8px;
-}
-
-.logo-image {
-    width: 50px;
-    margin-right: 10px;
 }
 
 .business-name {
@@ -61,6 +53,7 @@ body {
     font-weight: bold;
     color: black !important;
     margin-right: 20px;
+    text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover {
@@ -73,21 +66,68 @@ body {
     gap: 15px;
 }
 
+
 .icon {
-    width: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 .icon-btn {
     position: relative;
-    padding: 10px;
+    width: 40px; 
+    height: 40px; 
+    padding: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.cart-count {
+    font-size: 10px;
+    padding: 4px 6px;
+}
+
 
 .icon-btn:hover {
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 50%; 
+}
+
+.navbar-toggler {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    .business-name {
+        font-size: 18px; 
+    }
+
+    .nav-icons {
+        gap: 10px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .business-name {
+        font-size: 16px; 
+    }
+
+    .logo-image {
+        width: 30px;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 
